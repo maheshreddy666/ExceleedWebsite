@@ -1,0 +1,11 @@
+services:
+  my-app:
+    image: mahi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: "3001"
+    restart: always
