@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-
+import { DialogDemo } from "@/components/main/userDemo"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { PageHeader } from "@/components/page-header"
@@ -14,11 +14,11 @@ export default function ServicesPage() {
       <PageHeader
         title="Our Services"
         description="Comprehensive technology services tailored to meet your business needs."
-        image="/placeholder.svg?height=600&width=1200"
+        image="/products/services.webp"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ServiceCard
               title="IT Consulting"
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">IT Consulting Services</h2>
@@ -77,14 +77,14 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="relative h-[300px] md:h-[400px] overflow-hidden rounded-xl">
-              <Image src="/placeholder.svg?height=800&width=1200" alt="IT Consulting" fill className="object-cover" />
+              <Image src="/products/IT-Consulting.jpg" alt="IT Consulting" fill className="object-cover" />
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Our Service Process</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
@@ -155,7 +155,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
@@ -211,18 +211,14 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Ready to Get Started?</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
               Contact us today to discuss how our services can help your business thrive.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" asChild>
-                <Link href="/demo">
-                  Request a Demo <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <DialogDemo />
               <Button size="lg" variant="outline" asChild>
                 <Link href="/contact">Contact Us</Link>
               </Button>

@@ -15,11 +15,11 @@ export default function AboutPage() {
       <PageHeader
         title="About Us"
         description="Learn more about our mission, values, and the team behind Exceleed."
-        image="/placeholder.svg?height=600&width=1200"
+        image="/products/aboutus.jpg"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
@@ -42,7 +42,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Our Mission & Values</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
@@ -209,7 +209,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">Our Leadership Team</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
@@ -259,7 +259,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Ready to Work With Us?</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">

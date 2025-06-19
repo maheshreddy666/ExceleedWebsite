@@ -14,11 +14,11 @@ export default function BlogPage() {
       <PageHeader
         title="Blog & Insights"
         description="Stay updated with the latest trends and insights in technology and business."
-        image="/placeholder.svg?height=600&width=1200"
+        image="/products/insights_blog.png"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter">Latest Articles</h2>
             <div className="w-full md:w-auto">
@@ -81,14 +81,14 @@ export default function BlogPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-3 lg:gap-12">
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Featured Article</h2>
               <div className="bg-white rounded-xl overflow-hidden shadow-sm">
                 <div className="relative h-[300px] w-full">
                   <Image
-                    src="/placeholder.svg?height=600&width=1200"
+                    src="/products/Digital-Transformation.jpg"
                     alt="Digital Transformation"
                     fill
                     className="object-cover"
@@ -102,11 +102,11 @@ export default function BlogPage() {
                   <h3 className="text-2xl font-bold mb-2">Digital Transformation: A Comprehensive Guide for 2023</h3>
                   <p className="text-gray-500 mb-4">
                     Digital transformation has become a critical initiative for businesses looking to remain competitive
-                    in today's rapidly evolving marketplace. This comprehensive guide explores the key components of a
+                    in todays rapidly evolving marketplace. This comprehensive guide explores the key components of a
                     successful digital transformation strategy, from technology selection to change management.
                   </p>
                   <p className="text-gray-500 mb-4">
-                    We'll dive into real-world case studies, examine common challenges, and provide actionable insights
+                    Well dive into real-world case studies, examine common challenges, and provide actionable insights
                     to help your organization navigate its digital transformation journey successfully.
                   </p>
                   <Button asChild>

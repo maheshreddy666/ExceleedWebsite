@@ -13,11 +13,11 @@ export default function ProductsPage() {
       <PageHeader
         title="Our Products"
         description="Discover our comprehensive range of technology solutions designed to transform your business."
-        image="/placeholder.svg?height=600&width=1200"
+        image="/products/products.jpg"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <Tabs defaultValue="all" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList className="grid w-full max-w-md grid-cols-4">
@@ -34,15 +34,15 @@ export default function ProductsPage() {
                   title="Smart Conference System"
                   category="AV Solutions"
                   description="Advanced audio-visual solution for modern meeting rooms with integrated controls and seamless connectivity."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/smart-conference-system"
+                  image="/products/ConferenceRooms.png"
+                  href="/products/ConferenceRooms.png"
                 />
                 <ProductCard
                   title="Secure Cloud Infrastructure"
                   category="IT Solutions"
                   description="Enterprise-grade cloud solutions with top-tier security features and scalable architecture."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/secure-cloud-infrastructure"
+                  image="/products/Secure Cloud.jpg"
+                  href="/products/Secure Cloud.jpg"
                 />
                 <ProductCard
                   title="Unified Communications"
@@ -55,15 +55,15 @@ export default function ProductsPage() {
                   title="Network Optimization"
                   category="IT Solutions"
                   description="Performance-focused network solutions for businesses with advanced monitoring and management."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/network-optimization"
+                  image="/Products/Network-Optimization-Featured-Image.png"
+                  href="/Products/Network-Optimization-Featured-Image.png"
                 />
                 <ProductCard
                   title="Digital Signage System"
                   category="AV Solutions"
                   description="Dynamic digital signage solutions for impactful visual communications in any environment."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/digital-signage-system"
+                  image="/products/Digital-Signage.webP"
+                  href="/products/Digital-Signage.webP"
                 />
                 <ProductCard
                   title="VoIP Phone Systems"
@@ -81,22 +81,22 @@ export default function ProductsPage() {
                   title="Secure Cloud Infrastructure"
                   category="IT Solutions"
                   description="Enterprise-grade cloud solutions with top-tier security features and scalable architecture."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/secure-cloud-infrastructure"
+                  image="/products/Secure Cloud.jpg"
+                  href="/products/Secure Cloud.png"
                 />
                 <ProductCard
                   title="Network Optimization"
                   category="IT Solutions"
                   description="Performance-focused network solutions for businesses with advanced monitoring and management."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/network-optimization"
+                  image="/Products/Network-Optimization-Featured-Image.png"
+                  href="/Products/Network-Optimization-Featured-Image.png"
                 />
                 <ProductCard
                   title="Cybersecurity Suite"
                   category="IT Solutions"
                   description="Comprehensive security solutions to protect your business from evolving cyber threats."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/cybersecurity-suite"
+                  image="/products/cybersecurity.jpg"
+                  href="/products/cybersecurity.jpg"
                 />
               </div>
             </TabsContent>
@@ -133,22 +133,22 @@ export default function ProductsPage() {
                   title="Smart Conference System"
                   category="AV Solutions"
                   description="Advanced audio-visual solution for modern meeting rooms with integrated controls and seamless connectivity."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/smart-conference-system"
+                  image="/products/ConferenceRooms.png"
+                  href="/products/ConferenceRooms.png"
                 />
                 <ProductCard
                   title="Digital Signage System"
                   category="AV Solutions"
                   description="Dynamic digital signage solutions for impactful visual communications in any environment."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/digital-signage-system"
+                  image="/products/Digital-Signage.webP"
+                  href="/products/Digital-Signage.webP"
                 />
                 <ProductCard
                   title="Immersive Presentation Systems"
                   category="AV Solutions"
                   description="Create engaging presentations with our immersive audio-visual systems."
-                  image="/placeholder.svg?height=400&width=600"
-                  href="/products/immersive-presentation-systems"
+                  image="/products/Immersive-Presentation.jpeg"
+                  href="/products/Immersive-Presentation.jpeg"
                 />
               </div>
             </TabsContent>
@@ -157,7 +157,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Featured Product</h2>
@@ -205,7 +205,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter">How We Deliver</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
@@ -307,7 +307,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="w-full px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Ready to Transform Your Business?</h2>
             <p className="text-gray-500 md:text-lg max-w-[800px]">
