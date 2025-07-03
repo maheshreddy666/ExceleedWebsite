@@ -16,16 +16,17 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         <HeroSection />
-
-        <section id="clients" className="py-12 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-center text-xl font-medium tracking-tight mb-8">Partnered with Industry Leaders</h2>
+        <section id="clients" className="py-12 bg-gray-50 flex items-center">
+          <div className="w-full px-4 md:px-6">
+            <h2 className="text-center text-xl font-medium tracking-tight mb-8">
+              Partnered with Industry Leaders
+            </h2>
             <ClientLogos />
           </div>
         </section>
 
         <section id="about" className="py-16 md:py-24">
-          <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <div className="w-full grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h2>
               <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -57,7 +58,7 @@ export default function Home() {
         </section>
 
         <section id="products" className="py-16 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
+          <div className="w-full px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Products</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -74,7 +75,7 @@ export default function Home() {
         </section>
 
         <section id="services" className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="w-full px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -122,7 +123,7 @@ export default function Home() {
         </section>
 
         <section id="blog" className="py-16 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
+          <div className="w-full px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Latest Insights</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -161,7 +162,7 @@ export default function Home() {
         </section>
 
         <section id="cta" className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="w-full px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Ready to Transform Your Business?
@@ -182,7 +183,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="border-t bg-gray-50">
-        <div className="container flex flex-col gap-6 py-8 px-4 md:px-6 md:flex-row md:justify-between">
+        <div className="w-full flex flex-col gap-6 py-8 px-4 md:px-6 md:flex-row md:justify-between">
           <div className="flex flex-col gap-4 md:gap-6">
             <Link href="/" className="flex items-center gap-2">
               <Image src={ExceleedLogo} alt="Exceleed Logo" width={150} height={40} className="h-8 w-auto" />
@@ -283,7 +284,7 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t py-6">
-          <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row md:justify-between">
+          <div className="w-full flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row md:justify-between">
             <p className="text-xs text-gray-500">© 2023 Exceleed. All rights reserved.</p>
             <div className="flex items-center gap-4">
               <Link href="#" className="text-gray-500 hover:text-gray-900">

@@ -29,7 +29,7 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
             </div>
 
-            <div className="container relative z-10 px-4 py-24 md:py-32 lg:py-40 md:px-6">
+            <div className="w-full relative z-10 px-4 py-24 md:py-32 lg:py-40 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <motion.div
                         className="space-y-6"
