@@ -74,7 +74,7 @@ export function ProductShowcase() {
     }
 
     return (
-        <div ref={containerRef} className="relative  px-4 max-w-7xl mx-auto">
+        <div ref={containerRef} className="relative w-full px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 2xl:px-20">
             <motion.div
                 className="overflow-hidden rounded-xl shadow-lg"
                 initial={{ opacity: 0 }}

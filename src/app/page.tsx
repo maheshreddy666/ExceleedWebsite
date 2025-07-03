@@ -8,7 +8,10 @@ import { ServiceCard } from "@/components/service-card"
 import { BlogCard } from "@/components/blog-card"
 import { ProductShowcase } from "@/components/product-showcase"
 import { HeroSection } from "@/components/hero-section"
-import ExceleedLogo from "@/components/projectUsedImages/ComponyLogo/Exceleed_Logo.webp"
+import ExceleedLogo from "@/components/projectUsedImages/ComponyLogo/Exceleed_Logo.webp";
+import UserDemo from "@/components/main/userDemo";
+
+
 
 
 export default function Home() {
@@ -16,19 +19,21 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         <HeroSection />
-
-        <section id="clients" className="py-12 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-center text-xl font-medium tracking-tight mb-8">Partnered with Industry Leaders</h2>
+        <section id="clients" className="bg-gray-50 py-12">
+          <h2 className="text-center text-xl font-medium tracking-tight mb-8">
+            Partnered with Industry Leaders
+          </h2>
+          <div className="w-full">
             <ClientLogos />
           </div>
         </section>
 
+        {/* this is for Aubout us in main page */}
         <section id="about" className="py-16 md:py-24">
-          <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h2>
-              <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="text-gray-500 md:text-xl/relaxed">
                 Exceleed is a leading consulting and technology company dedicated to delivering innovative solutions
                 that exceed expectations. Our team of experts brings years of experience in IT, telecom, and AV
                 solutions.
@@ -39,12 +44,12 @@ export default function Home() {
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button variant="outline" asChild>
+                {/* <Button variant="outline" asChild>
                   <Link href="/contact">Contact Us</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
-            <div className="aspect-video overflow-hidden rounded-xl">
+            <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
               <Image
                 src={AboutUs}
                 alt="Team collaboration"
@@ -56,11 +61,13 @@ export default function Home() {
           </div>
         </section>
 
+        {/* this is for the Our products section */}
+
         <section id="products" className="py-16 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+            <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Products</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
                 Cutting-edge solutions designed to transform your business operations and enhance productivity.
               </p>
             </div>
@@ -73,45 +80,22 @@ export default function Home() {
           </div>
         </section>
 
+
         <section id="services" className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <div className="w-full max-w-[1440px] px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
                 Comprehensive services tailored to meet your specific business needs and challenges.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <ServiceCard
-                title="IT Consulting"
-                description="Strategic IT consulting to align technology with your business objectives."
-                icon="laptop"
-              />
-              <ServiceCard
-                title="Telecom Solutions"
-                description="Advanced telecommunication systems for seamless connectivity."
-                icon="phone"
-              />
-              <ServiceCard
-                title="AV Integration"
-                description="Comprehensive audio-visual solutions for modern workspaces."
-                icon="video"
-              />
-              <ServiceCard
-                title="Cloud Services"
-                description="Secure and scalable cloud infrastructure for your business."
-                icon="cloud"
-              />
-              <ServiceCard
-                title="Cybersecurity"
-                description="Robust security measures to protect your valuable data."
-                icon="shield"
-              />
-              <ServiceCard
-                title="Managed Services"
-                description="Proactive monitoring and management of your IT environment."
-                icon="settings"
-              />
+              <ServiceCard title="IT Consulting" description="Strategic IT consulting to align technology with your business objectives." icon="laptop" />
+              <ServiceCard title="Telecom Solutions" description="Advanced telecommunication systems for seamless connectivity." icon="phone" />
+              <ServiceCard title="AV Integration" description="Comprehensive audio-visual solutions for modern workspaces." icon="video" />
+              <ServiceCard title="Cloud Services" description="Secure and scalable cloud infrastructure for your business." icon="cloud" />
+              <ServiceCard title="Cybersecurity" description="Robust security measures to protect your valuable data." icon="shield" />
+              <ServiceCard title="Managed Services" description="Proactive monitoring and management of your IT environment." icon="settings" />
             </div>
             <div className="flex justify-center mt-8">
               <Button variant="outline" asChild>
@@ -122,35 +106,17 @@ export default function Home() {
         </section>
 
         <section id="blog" className="py-16 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <div className="w-full max-w-[1440px] px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Latest Insights</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
                 Stay updated with the latest trends and insights in technology and business.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <BlogCard
-                title="The Future of Remote Work Technology"
-                excerpt="Discover how emerging technologies are reshaping the remote work landscape."
-                date="April 15, 2023"
-                category="Technology"
-                image="/placeholder.svg?height=400&width=600"
-              />
-              <BlogCard
-                title="Cybersecurity Best Practices for 2023"
-                excerpt="Essential security measures every business should implement this year."
-                date="March 22, 2023"
-                category="Security"
-                image="/placeholder.svg?height=400&width=600"
-              />
-              <BlogCard
-                title="Cloud Migration: A Step-by-Step Guide"
-                excerpt="Learn how to seamlessly transition your business to the cloud."
-                date="February 10, 2023"
-                category="Cloud"
-                image="/placeholder.svg?height=400&width=600"
-              />
+              <BlogCard title="The Future of Remote Work Technology" excerpt="Discover how emerging technologies are reshaping the remote work landscape." date="April 15, 2023" category="Technology" image="/placeholder.svg?height=400&width=600" />
+              <BlogCard title="Cybersecurity Best Practices for 2023" excerpt="Essential security measures every business should implement this year." date="March 22, 2023" category="Security" image="/placeholder.svg?height=400&width=600" />
+              <BlogCard title="Cloud Migration: A Step-by-Step Guide" excerpt="Learn how to seamlessly transition your business to the cloud." date="February 10, 2023" category="Cloud" image="/placeholder.svg?height=400&width=600" />
             </div>
             <div className="flex justify-center mt-8">
               <Button variant="outline" asChild>
@@ -161,37 +127,36 @@ export default function Home() {
         </section>
 
         <section id="cta" className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ready to Transform Your Business?
-              </h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Schedule a demo today and discover how our solutions can help you achieve your business goals.
-              </p>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" asChild>
-                  <Link href="/demo">Request a Demo</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/contact">Contact Sales</Link>
-                </Button>
+          <div className="w-full max-w-[1440px] px-4 md:px-6 mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="max-w-[700px] mx-auto text-gray-500 md:text-xl/relaxed mt-4">
+              Schedule a demo today and discover how our solutions can help you achieve your business goals.
+            </p>
+            <div className="flex flex-col items-center justify-center gap-2 mt-6 min-[400px]:flex-row">
+              <div className="flex items-center gap-4  px-4 py-2 rounded-xl">
+                <UserDemo />
               </div>
+              {/* <Button size="lg" variant="outline" asChild>
+                <Link href="/contact">Contact Sales</Link>
+              </Button> */}
             </div>
           </div>
         </section>
       </main>
+
       <footer className="border-t bg-gray-50">
-        <div className="container flex flex-col gap-6 py-8 px-4 md:px-6 md:flex-row md:justify-between">
-          <div className="flex flex-col gap-4 md:gap-6">
+        <div className="w-full max-w-[1440px] px-4 md:px-6 mx-auto py-8 flex flex-col gap-6 md:flex-row md:justify-between">
+          <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image src={ExceleedLogo} alt="Exceleed Logo" width={150} height={40} className="h-8 w-auto" />
+              <Image src={ExceleedLogo} alt="Exceleed Logo" width={150} height={40} />
             </Link>
             <p className="text-sm text-gray-500 max-w-[350px]">
-              Empowering solutions, exceeding expectations. Delivering cutting-edge IT, telecom, and AV solutions
-              tailored to your needs.
+              Empowering solutions, exceeding expectations. Delivering cutting-edge IT, telecom, and AV solutions tailored to your needs.
             </p>
           </div>
+          {/* Footer Links (Company, Products, Services, Legal) stay as is... */}
           <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
             <div className="space-y-3">
               <h3 className="text-sm font-medium">Company</h3>
@@ -283,8 +248,9 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t py-6">
-          <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row md:justify-between">
+          <div className="w-full max-w-[1440px] px-4 md:px-6 mx-auto flex flex-col items-center md:flex-row justify-between">
             <p className="text-xs text-gray-500">© 2023 Exceleed. All rights reserved.</p>
+            {/* Social links stay as is... */}
             <div className="flex items-center gap-4">
               <Link href="#" className="text-gray-500 hover:text-gray-900">
                 <svg

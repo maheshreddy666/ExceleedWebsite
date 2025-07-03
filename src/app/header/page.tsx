@@ -9,8 +9,8 @@ import UserDemo from "@/components/main/userDemo"
 const HeaderPage = () => {
     return (
         <div>
-            <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
-                <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+            <header className="fixed top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
+                <div className="w-full flex h-16 items-center justify-between px-2 md:px-4">
                     <Link href="/" className="flex items-center gap-2">
                         <Image src={ExceleedLogo} alt="Exceleed Logo" width={180} height={60} className="h-8 w-[150px]" />
                     </Link>
@@ -31,8 +31,11 @@ const HeaderPage = () => {
                             Blog
                         </Link>
                     </nav>
-                    <div className="flex items-center gap-4 bg-sky-500">
-                        <UserDemo />
+                    <div className="flex items-center gap-4">
+                        {/* 👇 This will hide on mobile and show from md (768px) upward */}
+                        <div className="hidden md:block">
+                            <UserDemo />
+                        </div>
                         <MobileNav />
                     </div>
                 </div>

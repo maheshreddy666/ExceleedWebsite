@@ -46,13 +46,13 @@ export function HeroSection() {
                         </p>
                         <div className="flex flex-col gap-3 min-[400px]:flex-row">
                             <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                                <Link href="/solutions">
+                                <Link href="/services">
                                     Explore Solutions <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button size="lg" variant="outline" className="bg-sky-500" asChild>
+                            {/* <Button size="lg" variant="outline" className="bg-sky-500" asChild>
                                 <Link href="/contact">Contact Us</Link>
-                            </Button>
+                            </Button> */}
                         </div>
                     </motion.div>
 
