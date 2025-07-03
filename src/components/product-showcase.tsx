@@ -35,7 +35,7 @@ export function ProductShowcase() {
             id: 4,
             name: "Network Optimization",
             description: "Performance-focused network solutions for businesses",
-            image: "/placeholder.svg?height=400&width=600",
+            image: "/Products/Network-Optimization-Featured-Image.png",
         },
     ]
 

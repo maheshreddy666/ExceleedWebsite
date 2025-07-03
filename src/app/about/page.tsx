@@ -14,7 +14,7 @@ export default function AboutPage() {
       <PageHeader
         title="About Us"
         description="Learn more about our mission, values, and the team behind Exceleed."
-        image="/placeholder.svg?height=600&width=1200"
+        image="/products/aboutus.jpg"
       />
 
       <section className="py-12 md:py-16 lg:py-20 w-full mx-0">
