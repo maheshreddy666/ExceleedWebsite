@@ -11,20 +11,20 @@ import React, { useRef } from 'react'
 
 
 const AboutPage = () => {
-const easeoutRef = useRef<HTMLDivElement | null>(null);
+    const easeoutRef = useRef<HTMLDivElement | null>(null);
 
-  useGSAP(() => {
-    if (easeoutRef.current) {
-      gsap.from(easeoutRef.current.children, {
-        opacity: 0,
-        x: 40,
-        duration: 2,
-        ease: "back.inOut",
-        stagger: 0.5,
-      });
-    }
-  });
-  
+    useGSAP(() => {
+        if (easeoutRef.current) {
+            gsap.from(easeoutRef.current.children, {
+                opacity: 0,
+                x: 40,
+                duration: 2,
+                ease: "back.inOut",
+                stagger: 0.5,
+            });
+        }
+    });
+
     return (
         <div className="relative">
             <div className="relative" ref={easeoutRef}>
@@ -45,10 +45,10 @@ const easeoutRef = useRef<HTMLDivElement | null>(null);
                         <p className="text-4xl font-bold justify-center">About Exceleed</p>
                         <p className="mt-4 text-xl">
                             Exceleed, driven with core business principles on delivering the excellent solutions on IT, Telecom and AV for our customers. Establised in 2017, infused with passion of understanding the customer needs and design the best in class and cost-effective solution. Every team member thrive to bring in the excellence in every stage of project delivery with speed as our core driving factor.
-                           
-                                Well trained and qualified engineers at Exceleed strive to delight customer to gain the preference and confidence. Management team with immense
-                                experiance with IT AV and Telecom domine guide the team in designing robust solutions and delivering great customer experiance.
-    
+
+                            Well trained and qualified engineers at Exceleed strive to delight customer to gain the preference and confidence. Management team with immense
+                            experiance with IT AV and Telecom domine guide the team in designing robust solutions and delivering great customer experiance.
+
 
                         </p>
                     </div>
@@ -57,5 +57,6 @@ const easeoutRef = useRef<HTMLDivElement | null>(null);
         </div>
     );
 }
+
 
 export default AboutPage;
